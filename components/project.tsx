@@ -23,6 +23,7 @@ export default function Project({
 
 	return (
 		<motion.div
+			ref={ref}
 			style={{
 				scale: scaleProgess,
 				opacity: opacityProgess,
