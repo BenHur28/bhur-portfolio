@@ -1,8 +1,17 @@
+"use client";
+
 import SectionHeader from "./section-header";
+import { motion } from "framer-motion";
 
 export default function About() {
 	return (
-		<section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28">
+		<motion.section
+			className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+			initial={{ opacity: 0, y: 100 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ delay: 0.175 }}
+			id="about"
+		>
 			<SectionHeader>About Me</SectionHeader>
 			<p className="mb-3">
 				After graduating with a degree in{" "}
@@ -27,6 +36,6 @@ export default function About() {
 				<span className="italic">When I'm not coding</span>, I enjoy playing
 				video games, watching movies, and working out.
 			</p>
-		</section>
+		</motion.section>
 	);
 }
