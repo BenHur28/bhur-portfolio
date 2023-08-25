@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import SectionHeader from "./section-header";
 import { useSectionInView } from "@/lib/hooks";
