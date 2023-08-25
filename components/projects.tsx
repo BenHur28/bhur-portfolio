@@ -3,6 +3,7 @@
 import React from "react";
 import SectionHeader from "./section-header";
 import { projectsData } from "@/lib/data";
+import Project from "./project";
 
 export default function Projects() {
 	return (
@@ -10,7 +11,9 @@ export default function Projects() {
 			<SectionHeader>My projects</SectionHeader>
 			<div>
 				{projectsData.map((project, index) => (
-					<React.Fragment key={index}>Project goes here</React.Fragment>
+					<React.Fragment key={index}>
+						<Project {...project}></Project>
+					</React.Fragment>
 				))}
 			</div>
 		</section>

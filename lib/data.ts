@@ -1,4 +1,5 @@
 import react from "react";
+import lolImg from "@/public/lol.png";
 
 export const links = [
 	{
@@ -51,19 +52,19 @@ export const projectsData = [
 		title: "title",
 		description: "desc",
 		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: "insertImagehere",
+		imageUrl: lolImg,
 	},
 	{
 		title: "title",
 		description: "desc",
 		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: "insertImagehere",
+		imageUrl: lolImg,
 	},
 	{
 		title: "title",
 		description: "desc",
 		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: "insertImagehere",
+		imageUrl: lolImg,
 	},
 ] as const;
 
