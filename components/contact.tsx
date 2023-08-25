@@ -9,6 +9,14 @@ import { motion } from "framer-motion";
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
 
+	const sendEmail = async (formData: FormData) => {
+		"use server";
+
+		console.log("Running on server");
+		console.log(formData.get("senderEmail"));
+		console.log(formData.get("message"));
+	};
+
 	return (
 		<motion.section
 			id="contact"
@@ -37,9 +45,18 @@ export default function Contact() {
 				or through this form.
 			</p>
 
-			<form className="mt-10 flex flex-col">
+			<form
+				className="mt-10 flex flex-col"
+				action={async (formData) => {
+					console.log("Running on client");
+					console.log(formData.get("senderEmail"));
+					console.log(formData.get("message"));
+					await sendEmail(formData);
+				}}
+			>
 				<input
 					className="h-14 px-4 rounded-lg borderBlack transition-all"
+					name="senderEmail"
 					type="email"
 					required
 					maxLength={500}
