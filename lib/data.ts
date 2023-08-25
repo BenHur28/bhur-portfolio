@@ -1,5 +1,7 @@
-import react from "react";
+import React from "react";
 import lolImg from "@/public/lol.png";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 
 export const links = [
 	{
@@ -71,24 +73,27 @@ export const projectsData = [
 
 export const experiencesData = [
 	{
-		title: "title",
-		location: "location",
-		description: "desc",
-		icon: "icon",
-		date: "date",
+		title: "Support Specialist",
+		location: "NYC, New York metropolitan area",
+		description:
+			"Worked with WebFocus, a proprietary software platform that allows users to create, analyze, and collaborate on analytics content for business purposes.",
+		icon: React.createElement(CgWorkAlt),
+		date: "2019 - 2020",
 	},
 	{
-		title: "title",
-		location: "location",
-		description: "desc",
-		icon: "icon",
-		date: "date",
+		title: "Technical Support Engineer",
+		location: "NYC, New York metropolitan area",
+		description:
+			"Tested and debugged software product issues to create/report JIRA tickets. Collaborated with internal Product Managers to help improve the product.",
+		icon: React.createElement(CgWorkAlt),
+		date: "2020 - 2022",
 	},
 	{
-		title: "title",
-		location: "location",
-		description: "desc",
-		icon: "icon",
-		date: "date",
+		title: "Web Developer",
+		location: "NYC, New York metropolitan area",
+		description:
+			"I'm currently a front-end focused web developer working on honing my skills everyday. My stack includes React, Next.js, TypeScript, Tailwind, and MongoDB. I'm open to full-time opportunities.",
+		icon: React.createElement(FaReact),
+		date: "2023 - Present",
 	},
 ] as const;
