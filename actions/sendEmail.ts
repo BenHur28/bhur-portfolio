@@ -11,12 +11,12 @@ export const sendEmail = async (formData: FormData) => {
 	const senderEmail = formData.get("senderEmail");
 	const message = formData.get("message");
 
+	// simple server-side validation
 	if (!validateString(senderEmail, 500)) {
 		return {
 			error: "Invalid sender email",
 		};
 	}
-
 	if (!validateString(message, 5000)) {
 		return {
 			error: "Invalid message",
@@ -24,7 +24,6 @@ export const sendEmail = async (formData: FormData) => {
 	}
 
 	let data;
-
 	try {
 		data = await resend.emails.send({
 			from: "Contact Form <onboarding@resend.com>",
@@ -41,6 +40,7 @@ export const sendEmail = async (formData: FormData) => {
 			error: getErrorMessage(error),
 		};
 	}
+
 	return {
 		data,
 	};
