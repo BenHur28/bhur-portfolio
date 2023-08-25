@@ -16,7 +16,13 @@ export default function Experience() {
 	return (
 		<section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
 			<SectionHeader>My Experience</SectionHeader>
-			<VerticalTimeline></VerticalTimeline>
+			<VerticalTimeline>
+				{experiencesData.map((exp, index) => (
+					<React.Fragment key={index}>
+						<VerticalTimelineElement></VerticalTimelineElement>
+					</React.Fragment>
+				))}
+			</VerticalTimeline>
 		</section>
 	);
 }
