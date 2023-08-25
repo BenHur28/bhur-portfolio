@@ -6,9 +6,11 @@ import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
+import { experimental_useFormStatus } from "react-dom";
 
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
+	const { pending } = experimental_useFormStatus();
 
 	return (
 		<motion.section
