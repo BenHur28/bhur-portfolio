@@ -30,14 +30,8 @@ export const sendEmail = async (formData: FormData) => {
 			text: message as string,
 		});
 	} catch (error: unknown) {
-		if (error instanceof Error) {
-			return {
-				error: error.message,
-			};
-		} else if (error && typeof error === "object" && "message" in error) {
-			return {
-				error: error.message,
-			};
-		}
+		return {
+			error: getErrorMessage(error),
+		};
 	}
 };
