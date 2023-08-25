@@ -1,5 +1,7 @@
 import React from "react";
 import lolImg from "@/public/lol.png";
+import eCommerceImg from "@/public/eCommerce.png";
+import gameLibraryImg from "@/public/gameLibrary.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 
@@ -52,22 +54,25 @@ export const skillsData = [
 
 export const projectsData = [
 	{
-		title: "title",
-		description: "desc",
+		title: "E-Commerce Store + Dashboard",
+		description:
+			"E-commerce website for users can create products on an admin dashboard to sell on the store.",
+		tags: ["React", "TypeScript", "Next.js", "Shadcn-UI", "SQL"],
+		imageUrl: eCommerceImg,
+	},
+	{
+		title: "LOL.GG",
+		description:
+			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
 		tags: ["React", "TypeScript", "Next.js"],
 		imageUrl: lolImg,
 	},
 	{
-		title: "title",
-		description: "desc",
-		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: lolImg,
-	},
-	{
-		title: "title",
-		description: "desc",
-		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: lolImg,
+		title: "The-game-library",
+		description:
+			"The game library is a website where user can look up games based on genre, platform, date relevancy, etc",
+		tags: ["React", "TypeScript", "Chakra UI"],
+		imageUrl: gameLibraryImg,
 	},
 ] as const;
 
