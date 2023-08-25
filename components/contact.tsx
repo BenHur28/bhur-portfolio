@@ -45,6 +45,7 @@ export default function Contact() {
 					const { data, error } = await sendEmail(formData);
 
 					if (error) {
+						console.log("print this error");
 						toast.error(error);
 						return;
 					}
