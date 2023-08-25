@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 import React from "react";
 
 export default function Intro() {
@@ -48,12 +50,21 @@ export default function Intro() {
 			>
 				<span className="font-bold">Hello, I'm Ben.</span> I'm a{" "}
 				<span className="font-bold">
-					Front-end focused developer with full-stack experience as well
+					front-end focused full-stack developer
 				</span>{" "}
 				with <span className="font-bold">1 year</span> of experience. I enjoy
 				building <span className="italic">sites & apps</span>. My focus is{" "}
 				<span className="underline">React (Next.js)</span>.
 			</motion.h1>
+			<div>
+				<Link
+					href="#contact"
+					className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
+                    focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+				>
+					Contact me here <BsArrowRight />
+				</Link>
+			</div>
 		</section>
 	);
 }
