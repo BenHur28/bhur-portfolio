@@ -5,12 +5,10 @@ import SectionHeader from "./section-header";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
-import { experimental_useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
 
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
-	const { pending } = experimental_useFormStatus();
 
 	return (
 		<motion.section
