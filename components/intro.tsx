@@ -9,16 +9,19 @@ import { FaGithubSquare } from "react-icons/fa";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-session-context";
+import { useSectionInview } from "@/lib/hooks";
 
 export default function Intro() {
-	const { ref, inView } = useInView({ threshold: 0.5 });
-	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+	const { ref } = useSectionInview("Home");
 
-	useEffect(() => {
-		if (inView && Date.now() - timeOfLastClick > 1000) {
-			setActiveSection("Home");
-		}
-	}, [inView, setActiveSection, timeOfLastClick]);
+	// const { ref, inView } = useInView({ threshold: 0.5 });
+	// const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+	// useEffect(() => {
+	// 	if (inView && Date.now() - timeOfLastClick > 1000) {
+	// 		setActiveSection("Home");
+	// 	}
+	// }, [inView, setActiveSection, timeOfLastClick]);
 
 	return (
 		<section
