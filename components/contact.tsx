@@ -1,12 +1,16 @@
 import React from "react";
 import SectionHeader from "./section-header";
 import { FaPaperPlane } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Contact() {
+	const { ref } = useSectionInView("Contact");
+
 	return (
 		<section
 			id="contact"
 			className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+			ref={ref}
 		>
 			<SectionHeader>Contact Me</SectionHeader>
 
