@@ -1,11 +1,9 @@
-import React from "react";
+import SectionHeader from "./section-header";
 
 export default function About() {
 	return (
 		<section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28">
-			<h2 className="text-3xl font-medium capitalize mb-8 text-center">
-				About Me
-			</h2>
+			<SectionHeader>About Me</SectionHeader>
 			<p className="mb-3">
 				After graduating with a degree in{" "}
 				<span className="font-medium">Computer Science</span>, I had gotten my
