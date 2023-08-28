@@ -1,6 +1,7 @@
 import React from "react";
 import lolImg from "@/public/lol.png";
 import eCommerceImg from "@/public/eCommerce.png";
+import aiImage from "@/public/aiImage.png";
 import gameLibraryImg from "@/public/gameLibrary.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -22,10 +23,10 @@ export const links = [
 		name: "Skills",
 		hash: "#skills",
 	},
-	{
-		name: "Experience",
-		hash: "#experience",
-	},
+	// {
+	// 	name: "Experience",
+	// 	hash: "#experience",
+	// },
 	{
 		name: "Contact",
 		hash: "#contact",
@@ -61,11 +62,11 @@ export const projectsData = [
 		imageUrl: eCommerceImg,
 	},
 	{
-		title: "LOL.GG",
+		title: "Mastermind AI",
 		description:
-			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
-		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: lolImg,
+			"A SaaS AI platform where users can use the power of AI to get answers to questions, generate music, images, and more.",
+		tags: ["React", "TypeScript", "Next.js", "Shadcn-UI"],
+		imageUrl: aiImage,
 	},
 	{
 		title: "The-game-library",
@@ -73,6 +74,13 @@ export const projectsData = [
 			"The game library is a website where user can look up games based on genre, platform, date relevancy, etc",
 		tags: ["React", "TypeScript", "Chakra UI"],
 		imageUrl: gameLibraryImg,
+	},
+	{
+		title: "LOL.GG",
+		description:
+			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
+		tags: ["React", "TypeScript", "Next.js"],
+		imageUrl: lolImg,
 	},
 ] as const;
 
