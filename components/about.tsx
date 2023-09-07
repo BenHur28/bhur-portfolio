@@ -31,10 +31,10 @@ export default function About() {
 				<span className="font-medium">
 					React, Next.js, Node.js, and MongoDB
 				</span>
-				. I am also familiar with TypeScript and other langauages such as
-				Python. I am always looking to learn new technologies. I am currently
-				looking for a <span className="font-medium">full-time position</span> as
-				a software developer.
+				. I am also familiar with TypeScript and other langauges such as Python.
+				I am always looking to learn new technologies. I am currently looking
+				for a <span className="font-medium">full-time position</span> as a
+				software developer.
 			</p>
 
 			<p>
