@@ -65,18 +65,18 @@ export const projectsData = [
 		imageUrl: aiImage,
 	},
 	{
-		title: "The-game-library",
-		description:
-			"The game library is a website where user can look up games based on genre, platform, date relevancy, etc",
-		tags: ["React", "TypeScript", "Chakra UI"],
-		imageUrl: gameLibraryImg,
-	},
-	{
 		title: "LOL.GG",
 		description:
 			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
 		tags: ["React", "TypeScript", "Next.js"],
 		imageUrl: lolImg,
+	},
+	{
+		title: "The Game Library",
+		description:
+			"The game library is a website where user can look up games based on genre, platform, date relevancy, etc",
+		tags: ["React", "TypeScript", "Chakra UI"],
+		imageUrl: gameLibraryImg,
 	},
 ] as const;
 
