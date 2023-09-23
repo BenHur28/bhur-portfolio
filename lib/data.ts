@@ -46,6 +46,8 @@ export const skillsData = [
 	"Python",
 	"Django",
 	"Flask",
+	"C#",
+	"Microsoft ASP.NET CORE",
 	"Framer Motion",
 ] as const;
 
