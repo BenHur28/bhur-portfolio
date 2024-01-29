@@ -52,13 +52,13 @@ export const skillsData = [
 ] as const;
 
 export const projectsData = [
-	{
-		title: "E-Commerce Store + Dashboard",
-		description:
-			"E-commerce website for users can create products on an admin dashboard to sell on the store.",
-		tags: ["React", "TypeScript", "Next.js", "Shadcn-UI", "SQL"],
-		imageUrl: eCommerceImg,
-	},
+	// {
+	// 	title: "E-Commerce Store + Dashboard",
+	// 	description:
+	// 		"E-commerce website for users can create products on an admin dashboard to sell on the store.",
+	// 	tags: ["React", "TypeScript", "Next.js", "Shadcn-UI", "SQL"],
+	// 	imageUrl: eCommerceImg,
+	// },
 	{
 		title: "Mastermind AI",
 		description:
