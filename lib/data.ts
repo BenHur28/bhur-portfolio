@@ -49,6 +49,8 @@ export const skillsData = [
 	"C#",
 	"Microsoft ASP.NET CORE",
 	"Framer Motion",
+	"Unit Testing",
+	"Jest.js",
 ] as const;
 
 export const projectsData = [
@@ -65,6 +67,7 @@ export const projectsData = [
 			"A SaaS AI platform where users can use the power of AI to get answers to questions, generate music, images, and more.",
 		tags: ["React", "TypeScript", "Next.js", "Shadcn-UI"],
 		imageUrl: aiImage,
+		liveUrl: "https://mastermind-anfvgg2zj-benhur28.vercel.app/",
 	},
 	{
 		title: "LOL.GG",
@@ -72,6 +75,7 @@ export const projectsData = [
 			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
 		tags: ["React", "TypeScript", "Next.js"],
 		imageUrl: lolImg,
+		liveUrl: "https://lol-gg-black.vercel.app/",
 	},
 	{
 		title: "The Game Library",
@@ -79,6 +83,7 @@ export const projectsData = [
 			"The game library is a website where user can look up games based on genre, platform, date relevancy, etc",
 		tags: ["React", "TypeScript", "Chakra UI"],
 		imageUrl: gameLibraryImg,
+		liveUrl: "https://the-game-library.vercel.app/",
 	},
 ] as const;
 
