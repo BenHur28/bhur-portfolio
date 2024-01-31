@@ -67,7 +67,7 @@ export const projectsData = [
 			"A SaaS AI platform where users can use the power of AI to get answers to questions, generate music, images, and more.",
 		tags: ["React", "TypeScript", "Next.js", "Shadcn-UI"],
 		imageUrl: aiImage,
-		liveUrl: "https://mastermind-anfvgg2zj-benhur28.vercel.app/",
+		liveUrl: "https://mastermind-ai-sigma.vercel.app/",
 	},
 	{
 		title: "LOL.GG",
