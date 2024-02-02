@@ -70,20 +70,20 @@ export const projectsData = [
 		liveUrl: "https://mastermind-ai-sigma.vercel.app/dashboard",
 	},
 	{
-		title: "LOL.GG",
-		description:
-			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
-		tags: ["React", "TypeScript", "Next.js"],
-		imageUrl: lolImg,
-		liveUrl: "https://lol-gg-black.vercel.app/",
-	},
-	{
 		title: "The Game Library",
 		description:
 			"The game library is a website where user can look up games based on genre, platform, date relevancy, etc",
 		tags: ["React", "TypeScript", "Chakra UI"],
 		imageUrl: gameLibraryImg,
 		liveUrl: "https://the-game-library.vercel.app/",
+	},
+	{
+		title: "LOL.GG",
+		description:
+			"A website where users can look up information on the popular game, League of Legends. Users are able to look up champions and other players.",
+		tags: ["React", "TypeScript", "Next.js"],
+		imageUrl: lolImg,
+		liveUrl: "https://lol-gg-black.vercel.app/",
 	},
 ] as const;
 
